@@ -1,0 +1,141 @@
+*{color: aliceblue !important ;}
+body{  background-color: #232a34}
+main{
+   
+    font-family: cursive;
+position: relative;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+h1 , h2 , h3 , h4 {
+  
+font-family: 'Montserrat';
+text-transform: capitalize;
+
+}
+
+ .row{padding: 0; margin: 0;}
+
+  .part-1{
+        height: 60px;
+       
+        .bd-menu{
+         
+        ul{
+          li{
+            transition: .4s;
+            &:hover a{
+              color: #3acb16 !important;
+              text-shadow: 1px 1px  rgb(13, 134, 71) ,  !important;
+              border-bottom: 1px solid #3acb16;
+            }
+            a{
+          font-size: 14px ;
+          text-decoration: none;
+          text-transform: uppercase;
+          
+        }
+          }
+        }
+        }
+    }
+    
+    .part-2{
+       
+            ul {
+                width: 100%;
+         list-style-type: none;
+         position: relative;
+         
+        
+         
+      
+      }
+    } 
+     
+  
+.skil-part{
+  
+  svg{
+    width:100px ;height:100px;
+    .circle-progress-circle{ 
+      stroke-width: 6px;
+      stroke:whitesmoke;
+    }
+    .circle-progress-text{ 
+      fill: hsl(142, 100%, 98%);
+      font-size: 16px;
+    }
+  .circle-progress-value{
+    stroke-width: 6px;
+      
+     }
+    }
+
+  }
+  #portfolio{
+    figure{
+      &:hover figcaption{
+        opacity: 1;
+        
+      }
+      position: relative;
+          &::before{
+          content: '';
+          display: flex;
+          position: absolute;
+          width: 40px; height:40px;
+          transition: .4s;
+          opacity: 0;
+          left: 50% ;top: 50%;
+          transform: translate(-50% , -50%);
+         
+        }
+         &:hover::before{
+            background-color: #9be68a85;
+            height: 100%; width: 100%;
+            opacity: 1;
+          }
+      figcaption{
+        
+        position: absolute;
+        left: 50%;top: 50%;
+        transform: translate(-50% , -50%);
+        opacity: 0;
+        transition: .4s;
+        
+        z-index: 999;
+        
+        a{
+          text-decoration: none;
+          text-transform: capitalize;
+          width: 120px;
+          height: 40px;
+          background-color: #3acb16;
+          border-radius:10px;
+        }
+      }
+    }
+  }
+
+
+        .footer{
+          height: auto;
+            ul{
+              li{
+                list-style-type: none !important;
+                &:hover a{
+                  color: #3acb16 !important;
+                }
+                &:hover i {
+                  color: #0aea46;
+                }
+                a{
+                  text-decoration: none !important;
+                }
+              }
+            }
+        }
